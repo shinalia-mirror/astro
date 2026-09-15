@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>帆型市立大学｜研究論文データベース</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="topbar">
+  <div>帆型市立大学</div>
+  <div>研究情報システム　/　論文データベース</div>
+</div>
+
+<main class="container">
+  <header class="header">
+    <div class="logo">HATOGATA MUNICIPAL UNIVERSITY</div>
+    <div class="system">RESEARCH INFORMATION SYSTEM</div>
+  </header>
+
+  <section class="search-panel">
+    <div class="section-label">論文ID照会</div>
+    <p class="description">研究論文データベースに登録された論文を検索します。</p>
+    <form id="searchForm">
+      <div class="search-row">
+        <input id="idInput" type="text" inputmode="text" autocomplete="off" placeholder="6桁のIDを入力" maxlength="8" aria-label="論文ID">
+        <button type="submit">照会</button>
+      </div>
+    </form>
+    <div id="status" class="status">IDを入力してください。</div>
+  </section>
+
+  <section id="result" class="result hidden"></section>
+
+  <footer>
+    <div>帆型市立大学　研究推進部</div>
+    <div>Research Information System / Internal Database</div>
+  </footer>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
